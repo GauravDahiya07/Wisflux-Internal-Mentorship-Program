@@ -1,0 +1,44 @@
+h1 {
+    color :blueviolet;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 200%;
+}
+
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  nav#navbar {
+    grid-area: navbar;
+    position: fixed;   
+}
+
+nav#navbar a {
+	display: block;
+    
+}
+
+main#main-doc {
+	grid-area: mainContent;
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+    
+}
+
+code {
+	background-color: #CCC;
+	display: block;
+	padding: 20px;
+}
