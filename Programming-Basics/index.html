@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+    
+<form>
+1st Number : <input type="text" id="first-number" /><br>
+2nd Number: <input type="text" id="second-number" /><br>
+<input type="button" onClick="multiplyNo()" Value="Multiply" />
+<input type="button" onClick="divideNo()" Value="Divide" />
+</form>
+
+<p>The Result is : <br>
+<span id="result"></span>
+</p>
+
+<script>
+
+function multiplyNo()
+{
+        n1 = document.getElementById("first-number").value;
+        n2 = document.getElementById("second-number").value;
+        document.getElementById("result").innerHTML = n1 * n2;
+}
+
+function divideNo() 
+{ 
+        n1 = document.getElementById("first-number").value;
+        n2 = document.getElementById("second-number").value;
+        document.getElementById("result").innerHTML = n1 / n2;
+}
+</script>
+</body>
+</html>
